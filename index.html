@@ -3,108 +3,131 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name | Cybersecurity</title>
+<title>Savyasachi Arjun | Security Research</title>
 
 <style>
     body {
         margin: 0;
-        background-color: #0d0d0d;
-        color: #e5e5e5;
-        font-family: "Courier New", monospace;
+        background-color: #0f1117;
+        color: #e6edf3;
+        font-family: Georgia, serif;
+        line-height: 1.6;
     }
 
-    .container {
-        text-align: center;
+    .wrapper {
+        max-width: 900px;
+        margin: auto;
         padding: 60px 20px;
     }
 
     h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
+        font-size: 42px;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        color: #8b949e;
+        margin-bottom: 30px;
     }
 
     .intro {
-        max-width: 800px;
-        margin: 0 auto;
-        color: #ff9966;
-        border-left: 3px solid #ff9966;
+        border-left: 4px solid #3fb950;
         padding-left: 15px;
-        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 18px;
     }
 
-    .section-title {
-        margin-top: 60px;
-        font-size: 28px;
-        text-align: left;
-        margin-left: 10%;
+    h2 {
+        margin-top: 50px;
+        border-bottom: 1px solid #30363d;
+        padding-bottom: 5px;
     }
 
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
+    .post {
+        margin-top: 25px;
     }
 
-    .card {
-        background: #1a1a1a;
-        width: 220px;
-        height: 150px;
-        border-radius: 12px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding-bottom: 15px;
-        transition: 0.3s;
-        cursor: pointer;
+    .post-title {
+        font-size: 20px;
+        color: #58a6ff;
+        text-decoration: none;
     }
 
-    .card:hover {
-        transform: translateY(-5px);
-        background: #222;
+    .post-title:hover {
+        text-decoration: underline;
     }
 
-    .card-title {
-        font-size: 16px;
+    .post-date {
+        font-size: 14px;
+        color: #8b949e;
     }
 
     footer {
-        text-align: center;
-        margin-top: 60px;
-        padding: 20px;
-        color: gray;
+        margin-top: 80px;
+        padding-top: 20px;
+        border-top: 1px solid #30363d;
         font-size: 14px;
+        color: #8b949e;
+    }
+
+    a {
+        color: #58a6ff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-    <h1>Your Name</h1>
-    <div class="intro">
-        Welcome to my website! I'm a cybersecurity enthusiast sharing blog posts,
-        CTF write-ups, detection engineering notes, and security research.
+<div class="wrapper">
+
+    <h1>Savyasachi Arjun</h1>
+    <div class="subtitle">
+        SOC Analyst · Detection Engineering · Cloud Security
     </div>
+
+    <div class="intro">
+        This blog documents my journey in cybersecurity — including malware analysis,
+        detection engineering research, Rust security tooling, and deep dives into
+        MITRE ATT&CK techniques.
+    </div>
+
+    <h2>Recent Research</h2>
+
+    <div class="post">
+        <a href="#" class="post-title">Detecting Fileless Malware via LOLBins and Memory Artifacts</a>
+        <div class="post-date">February 2026</div>
+    </div>
+
+    <div class="post">
+        <a href="#" class="post-title">JS → PowerShell → Reflective Injection: A Modern Attack Chain</a>
+        <div class="post-date">January 2026</div>
+    </div>
+
+    <div class="post">
+        <a href="#" class="post-title">Mapping Detection Logic to MITRE ATT&CK</a>
+        <div class="post-date">December 2025</div>
+    </div>
+
+    <h2>Categories</h2>
+
+    <p>
+        <a href="#">Malware Analysis</a> ·
+        <a href="#">Detection Engineering</a> ·
+        <a href="#">Cloud Security</a> ·
+        <a href="#">CTF Writeups</a> ·
+        <a href="#">Research Notes</a>
+    </p>
+
+    <footer>
+        © 2026 Savyasachi Arjun · Built with GitHub Pages
+    </footer>
+
 </div>
-
-<h2 class="section-title">The Resource Hub</h2>
-
-<div class="cards">
-    <div class="card"><div class="card-title">Blog Posts</div></div>
-    <div class="card"><div class="card-title">CTF Writeups</div></div>
-    <div class="card"><div class="card-title">Course Summaries</div></div>
-    <div class="card"><div class="card-title">Cyber Reports</div></div>
-    <div class="card"><div class="card-title">Articles</div></div>
-    <div class="card"><div class="card-title">Event Notes</div></div>
-    <div class="card"><div class="card-title">Bootcamps</div></div>
-    <div class="card"><div class="card-title">About Me</div></div>
-</div>
-
-<footer>
-    © 2026 Your Name
-</footer>
 
 </body>
 </html>
