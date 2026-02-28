@@ -5,117 +5,156 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your Name | Research Notes</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 <style>
-    body {
-        margin: 0;
-        background: #0c0f14;
-        color: #e8e8e8;
-        font-family: 'Inter', sans-serif;
-    }
+:root {
+    --bg: #0c0f14;
+    --card: #141821;
+    --border: #1f2530;
+    --text: #e6e6e6;
+    --muted: #9da5b4;
+    --accent: #a4161a; /* Deep academic red */
+}
 
-    .hero {
-        text-align: center;
-        padding: 100px 20px 60px;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    .avatar {
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        background: #1c1f26;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 30px;
-        margin-bottom: 20px;
-        border: 1px solid #2b313c;
-    }
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+}
 
-    h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 42px;
-        margin: 10px 0;
-        letter-spacing: 1px;
-    }
+/* ===== HERO SECTION ===== */
 
-    .tagline {
-        color: #9da5b4;
-        font-size: 15px;
-        margin-top: 10px;
-    }
+.hero {
+    text-align: center;
+    padding: 110px 20px 70px;
+}
 
-    .intro {
-        max-width: 750px;
-        margin: 30px auto;
-        font-size: 17px;
-        line-height: 1.7;
-        color: #c6cbd3;
-    }
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 25px;
+    border: 1px solid var(--border);
+}
 
-    .divider {
-        width: 60px;
-        height: 2px;
-        background: #4e8cff;
-        margin: 40px auto;
-    }
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    letter-spacing: 1px;
+}
 
-    .section {
-        max-width: 1100px;
-        margin: auto;
-        padding: 20px;
-    }
+.tagline {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 15px;
+}
 
-    .section h2 {
-        font-size: 22px;
-        font-weight: 600;
-        margin-bottom: 25px;
-        color: #ffffff;
-    }
+.intro {
+    max-width: 750px;
+    margin: 35px auto 0;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #c6cbd3;
+    padding-left: 18px;
+    border-left: 3px solid var(--accent);
+}
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 25px;
-    }
+.divider {
+    width: 60px;
+    height: 2px;
+    background: var(--accent);
+    margin: 45px auto 0;
+}
 
-    .card {
-        background: #141821;
-        padding: 25px;
-        border-radius: 12px;
-        transition: 0.3s ease;
-        border: 1px solid #1f2530;
-    }
+/* ===== SECTION ===== */
 
-    .card:hover {
-        transform: translateY(-6px);
-        border-color: #4e8cff;
-    }
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
 
-    .card h3 {
-        margin: 0 0 10px;
-        font-size: 18px;
-    }
+.section h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+}
 
-    .card p {
-        font-size: 14px;
-        color: #9da5b4;
-    }
+.section h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: var(--accent);
+    margin-top: 8px;
+}
 
-    footer {
-        text-align: center;
-        margin-top: 100px;
-        padding: 30px;
-        font-size: 13px;
-        color: #7a8191;
-        border-top: 1px solid #1f2530;
-    }
+/* ===== GRID ===== */
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 28px;
+}
+
+.card {
+    background: var(--card);
+    padding: 28px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+/* ===== LINKS ===== */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover h3 {
+    color: var(--accent);
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    margin-top: 90px;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+    color: #7a8191;
+    border-top: 1px solid var(--border);
+}
 </style>
 </head>
 
@@ -129,9 +168,9 @@
     </div>
 
     <div class="intro">
-        This space documents my ongoing work in cybersecurity — covering 
-        attack chain analysis, malware research, cloud security concepts, 
-        and practical detection engineering experiments.
+        This space documents my work in cybersecurity — including attack chain analysis,
+        malware investigations, detection engineering experiments, and structured
+        technical research.
     </div>
 
     <div class="divider"></div>
@@ -143,17 +182,17 @@
     <div class="grid">
         <a href="#"><div class="card">
             <h3>Research Articles</h3>
-            <p>Long-form technical explorations and analytical breakdowns.</p>
+            <p>In-depth technical breakdowns and structured analytical studies.</p>
         </div></a>
 
         <a href="#"><div class="card">
             <h3>CTF & Labs</h3>
-            <p>Hands-on challenges and exploit methodology documentation.</p>
+            <p>Hands-on exploit development and methodology documentation.</p>
         </div></a>
 
         <a href="#"><div class="card">
             <h3>Detection Engineering</h3>
-            <p>Sigma rules, MITRE mappings, and threat hunting strategies.</p>
+            <p>Sigma rules, MITRE mappings, threat hunting workflows.</p>
         </div></a>
 
         <a href="#"><div class="card">
@@ -163,7 +202,7 @@
 
         <a href="#"><div class="card">
             <h3>Course Notes</h3>
-            <p>Structured summaries from security certifications and studies.</p>
+            <p>Structured summaries from certifications and research material.</p>
         </div></a>
 
         <a href="#"><div class="card">
